@@ -1,11 +1,12 @@
 // Write your code here
 const DestinationItem = props => {
-  const {destDetails} = props
-  const {name, imgUrl} = destDetails
+  const {destinationDetails} = props
+  const {imgUrl, name} = destinationDetails
+
   return (
-    <li>
-      <img src={imgUrl} alt={name} />
-      <p>{name}</p>
+    <li className="destination-item">
+      <img src={imgUrl} alt={name} className="destination-image" />
+      <p className="name">{name}</p>
     </li>
   )
 }
